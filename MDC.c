@@ -1,14 +1,15 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int mdc(int a, int b){
-  if(b==0)
+int mdc(int a, int b) {
+  if (b == 0)
     return a;
-  return mdc(b,a%b);
+  return mdc(b, a % b);
 }
+
 int main(int argc, char const *argv[]) {
-  int a,b;
+  int a, b;
   printf("Digite dois numeros inteiros: ");
-  scanf("%d %d",&a,&b );
-  printf("Resultado: %d\n",mdc(a,b) );
+  scanf("%d %d", &a, &b);
+  printf("Resultado: %d\n", mdc(a, b));
   return 0;
 }
